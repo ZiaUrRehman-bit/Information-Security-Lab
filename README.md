@@ -5,7 +5,7 @@
 ---
 # Python Library "Cryptizia"
 
-**[Cryptizia package](https://pypi.org/project/Cryptizia/)
+[Cryptizia package](https://pypi.org/project/Cryptizia/)
 
 ---
 
