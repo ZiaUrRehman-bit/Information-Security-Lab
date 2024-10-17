@@ -3,6 +3,11 @@
 **Lab Instructor**: Engr. Zia Ur Rehman
 
 ---
+# Python Library "Cryptizia"
+
+[Cryptizia package](https://pypi.org/project/Cryptizia/)
+
+---
 
 ## Lab Contents
 
