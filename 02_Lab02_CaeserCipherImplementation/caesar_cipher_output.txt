@@ -1,0 +1,94 @@
+
+Processing...
+
+
+Original Text: HELLO
+
+
+=== Introduction to Caesar Cipher ===
+
+The Caesar Cipher is one of the simplest and most widely known encryption techniques.
+It is a type of substitution cipher where each letter in the plaintext is 'shifted'
+by a certain number of positions down the alphabet.
+
+The mathematical formula for encryption is:
+E(x) = (x + n) % 26
+
+Where:
+- E(x) is the encrypted letter.
+- x is the position of the letter in the alphabet (starting from 0 for 'A').
+- n is the shift value (the number of positions to shift).
+
+The decryption formula is:
+D(x) = (x - n) % 26
+
+Let's explore how this works with an example using a shift value of 3.
+
+
+=== Caesar Cipher Encryption ===
+
+Encrypting H:
+  - Current Position (Index of H): 7
+  - Shift by 3: (7 + 3) % 26 = 10
+  - Encrypted Character: H → K
+Encrypting E:
+  - Current Position (Index of E): 4
+  - Shift by 3: (4 + 3) % 26 = 7
+  - Encrypted Character: E → H
+Encrypting L:
+  - Current Position (Index of L): 11
+  - Shift by 3: (11 + 3) % 26 = 14
+  - Encrypted Character: L → O
+Encrypting L:
+  - Current Position (Index of L): 11
+  - Shift by 3: (11 + 3) % 26 = 14
+  - Encrypted Character: L → O
+Encrypting O:
+  - Current Position (Index of O): 14
+  - Shift by 3: (14 + 3) % 26 = 17
+  - Encrypted Character: O → R
+
+Final Encrypted Text: KHOOR
+
+
+Result: KHOOR
+
+=== Process Completed ===
+
+
+Processing...
+
+
+Original Text: KHOOR
+
+
+=== Caesar Cipher Decryption ===
+
+Decrypting K:
+  - Current Position (Index of K): 10
+  - Shift by 3: (10 - 3) % 26 = 7
+  - Decrypted Character: K → H
+Decrypting H:
+  - Current Position (Index of H): 7
+  - Shift by 3: (7 - 3) % 26 = 4
+  - Decrypted Character: H → E
+Decrypting O:
+  - Current Position (Index of O): 14
+  - Shift by 3: (14 - 3) % 26 = 11
+  - Decrypted Character: O → L
+Decrypting O:
+  - Current Position (Index of O): 14
+  - Shift by 3: (14 - 3) % 26 = 11
+  - Decrypted Character: O → L
+Decrypting R:
+  - Current Position (Index of R): 17
+  - Shift by 3: (17 - 3) % 26 = 14
+  - Decrypted Character: R → O
+
+Final Decrypted Text: HELLO
+
+
+Result: HELLO
+
+=== Process Completed ===
+
