@@ -1,0 +1,104 @@
+
+=== Introduction to Playfair Cipher ===
+
+The Playfair Cipher is a manual symmetric encryption technique and is one of the
+first digraph substitution ciphers. The encryption process uses a 5x5 matrix
+of letters constructed using a keyword. The letters are combined in pairs, and
+different rules apply based on their position in the matrix.
+
+=== Rules for Playfair Cipher ===
+
+1. **Creating the Key Matrix**:
+- Choose a keyword (e.g., "PLAYFAIR") and remove any duplicate letters.
+- Replace the letter 'J' with 'I' (e.g., "JACK" becomes "IACK").
+- Fill a 5x5 matrix with the letters of the keyword first, followed by the remaining letters of the alphabet (excluding 'J').
+
+2. **Preparing the Plaintext**:
+- Convert all letters to uppercase and remove non-alphabet characters.
+- If a pair of letters in plaintext is identical (e.g., "LL"), insert an 'X' between them (e.g., "LL" becomes "LX").
+- If the plaintext has an odd number of characters, append an 'X' at the end (e.g., "HELLO" becomes "HELX LO").
+
+3. **Encrypting the Plaintext**:
+- Divide the formatted plaintext into pairs of letters.
+- For each pair, apply the following rules:
+a. **Same Row**: If both letters are in the same row of the matrix, replace them with the letters immediately to their right (wrap around to the beginning of the row if needed).
+b. **Same Column**: If both letters are in the same column, replace them with the letters immediately below (wrap around to the top if needed).
+c. **Rectangle**: If the letters form a rectangle in the matrix, replace them with the letters on the same row but at the opposite corners of the rectangle.
+
+4. **Decrypting the Ciphertext**:
+- Follow the same process as encryption but reverse the rules:
+a. For letters in the same row, replace them with the letters immediately to their left.
+b. For letters in the same column, replace them with the letters immediately above.
+c. For letters forming a rectangle, swap them as before.
+
+Let's explore how this works with the key 'PLAYF':
+
+
+=== Playfair Cipher Encryption ===
+
+
+=== Playfair Cipher Key Matrix ===
+
+P L A Y F
+I R B C D
+E G H J K
+M N O Q S
+T U V W X
+Encrypting Pair: HE
+  - Same Row: H(2,2) and E(2,0)
+  - Encrypted as: JG
+Encrypting Pair: LX
+  - Rectangle: L(0,1) and X(4,4)
+  - Encrypted as: FU
+Encrypting Pair: LO
+  - Rectangle: L(0,1) and O(3,2)
+  - Encrypted as: AN
+
+Final Encrypted Text: JGFUAN
+
+
+=== Playfair Cipher Encryption ===
+
+
+=== Playfair Cipher Key Matrix ===
+
+P L A Y F
+I R B C D
+E G H J K
+M N O Q S
+T U V W X
+Encrypting Pair: HE
+  - Same Row: H(2,2) and E(2,0)
+  - Encrypted as: JG
+Encrypting Pair: LX
+  - Rectangle: L(0,1) and X(4,4)
+  - Encrypted as: FU
+Encrypting Pair: LO
+  - Rectangle: L(0,1) and O(3,2)
+  - Encrypted as: AN
+
+Final Encrypted Text: JGFUAN
+
+
+=== Playfair Cipher Decryption ===
+
+
+=== Playfair Cipher Key Matrix ===
+
+P L A Y F
+I R B C D
+E G H J K
+M N O Q S
+T U V W X
+Decrypting Pair: JG
+  - Same Row: J(2,3) and G(2,1)
+  - Decrypted as: HE
+Decrypting Pair: FU
+  - Rectangle: F(0,4) and U(4,1)
+  - Decrypted as: LX
+Decrypting Pair: AN
+  - Rectangle: A(0,2) and N(3,1)
+  - Decrypted as: LO
+
+Final Decrypted Text: HELXLO
+
