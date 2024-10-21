@@ -1,0 +1,15 @@
+# Cryptizia
+
+Cryptizia is a Python library for various cipher techniques including the Caesar cipher. 
+
+## Installation
+
+You can install the library using pip:
+
+```bash
+pip install cryptizia
+
+```
+## How to use in Code
+
+### Caeser Cipher
