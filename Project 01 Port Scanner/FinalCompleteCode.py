@@ -3,7 +3,7 @@ import socket  # Import the socket module to create and connect sockets
 import threading  # Import the threading module to allow for multi-threaded execution
 
 # Define the target IP address that will be scanned for open ports
-target = "127.0.0.1"  # Loopback address for local testing
+target = "191.168.137.159"  # Loopback address for local testing
 
 # Create a Queue object to hold the list of ports that need to be scanned
 queue = Queue()
